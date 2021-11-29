@@ -3,22 +3,67 @@
 	margin: 0;
 }
 
+.my_blue {
+	background: #1b1b4d;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
+	background: #000000;
 }
 
 nav {
-	height: 50px;
+	background: #000000;
 }
 
 .header-logo {
-	margin-left: 5%;
+	text-align: center;
 }
 
 .header-blocks {
 	position: absolute;
-  	right: 0;
-	margin-right: 5%;
+  	right: 10%;
 }
 
+.main-block {
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.main-text {
+	display: block;
+	margin-top: 10%;
+	width: 50%;
+}
+
+.main-name {
+	width: 100%;
+}
+
+.main-fields {
+	margin-top: 10%;
+}
+
+.display-6 {
+	color: #E0FFFF;
+}
+
+
+.img-logo {
+	min-width: 350px;
+}
+
+.hire {
+	text-align: center;
+}
+
+.btn-hire {
+	width: 70%;
+	height: 100%;
+	margin-top: 10%;
+	padding: 0.5rem 1rem;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	border-color: #E0FFFF;
+	text-align: center;
+}
