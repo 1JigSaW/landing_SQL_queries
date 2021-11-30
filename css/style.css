@@ -11,6 +11,10 @@
 	color: #1b1b4d;
 }
 
+.shadow {
+	box-shadow: 0 0 30px #FFFFFF;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
@@ -78,10 +82,11 @@ img {
 	font-size: 4vh;
 	border-color: #000000;
 	text-align: center;
+	box-shadow: 0 0 15px #1b1b4d;
 }
 
 .main-contact {
-	margin-top: 3%;
+	margin-top: 4%;
 	margin-bottom: 3%;
 
 }
@@ -96,6 +101,7 @@ img {
 	color: #000000;
 	overflow: hidden;
 	background-color: #E0FFFF;
+	box-shadow: 0 0 10px #FFFFFF;
 }
 
 .img-telegram, .img-github, .img-gmail, .img-phone {
@@ -119,11 +125,15 @@ img {
 	padding-top: 2%;
 }
 
+.img_about {
+	margin-top: 40px;
+}
+
 .about-text {
 	font-family: 'Raleway', sans-serif;
 	font-size: 3vh;
 	color: #E0FFFF;
-	margin-top: 2%;
+	margin-top: 40px;
 	border: 2px;
 	border-radius: 2px;
 	border-color: #000000;
@@ -133,13 +143,14 @@ img {
     align-items: center;
     padding: 20px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 27px;
     font-family: 'Raleway', sans-serif;
     background: #E0FFFF;
     color: #000000;
     border-radius: 30px;
     text-align: center;
+    box-shadow: 0 0 15px #FFFFFF;
 }
 
 .number-benefits {
@@ -151,6 +162,10 @@ img {
 .text-benefits {
 	margin: 0;
 	padding: 0;
+}
+
+.skills {
+	margin-bottom: 100px;
 }
 
 .skill_one {
@@ -167,6 +182,7 @@ img {
 	height: 40%;
 	border-radius: 30px;
 	background-clip: border-box;
+	box-shadow: 0 0 10px #FFFFFF;
 }
 
 .projects-cards {
@@ -181,6 +197,7 @@ img {
 	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	margin-bottom: 20px;
+	box-shadow: 0 0 15px #FFFFFF;
 }
 
 .card-text {
@@ -194,6 +211,7 @@ img {
 	border-color: #000000;
 	text-align: center;
 	color: #FFFFFF;
+	box-shadow: 0 0 15px #1b1b4d;
 }
 
 .card-title {
