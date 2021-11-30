@@ -7,6 +7,10 @@
 	background: #1b1b4d;
 }
 
+.my_blue_color {
+	color: #1b1b4d;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
@@ -19,6 +23,9 @@ nav {
 
 .header-logo {
 	text-align: center;
+	font-family: 'Alfa Slab One', cursive;
+	border-color: #000000;
+	color: #E0FFFF;
 }
 
 .header-blocks {
@@ -27,12 +34,14 @@ nav {
 }
 
 .main-block {
+	width: 100%;
+	height: 94vh;
 	font-family: 'Alfa Slab One', cursive;
 }
 
 .main-text {
 	display: block;
-	margin-top: 10%;
+	margin-top: 7%;
 	width: 50%;
 }
 
@@ -42,15 +51,23 @@ nav {
 
 .main-fields {
 	margin-top: 10%;
+	font-family: 'Raleway', sans-serif;
 }
 
 .display-6 {
 	color: #E0FFFF;
 }
 
+@media screen and (min-width: 401px) {
+	.img-logo {
+		min-width: 350px;
+	}	
+}
 
-.img-logo {
-	min-width: 350px;
+@media screen and (max-width: 401px) {
+	.img-logo {
+		min-width: 200px;
+	}	
 }
 
 .hire {
@@ -63,7 +80,22 @@ nav {
 	margin-top: 10%;
 	padding: 0.5rem 1rem;
 	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	border-color: #E0FFFF;
+	font-size: 4vh;
+	border-color: #000000;
 	text-align: center;
 }
+
+.main-contact {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.btn-contact {
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2vh;
+	margin-bottom: 5%;
+	border: 0;
+	border-radius: 0;
+	color: #E0FFFF;
+	overflow: hidden;}
