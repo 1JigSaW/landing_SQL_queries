@@ -32,6 +32,10 @@ nav {
 	color: #E0FFFF;
 }
 
+.my_text {
+	color: #E0FFFF;
+}
+
 .header-blocks {
 	position: absolute;
   	right: 10%;
@@ -239,6 +243,13 @@ img {
 .form-control-lg {
 	border-radius: 1rem;
 	background-clip: border-box;
+}
+
+.btn-send {
+	width: 100%;
+	border-radius: 1rem;
+	border-color: #000000;
+	box-shadow: 0 0 15px #1b1b4d;
 }
 
 .footer-topic {
