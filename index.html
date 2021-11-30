@@ -10,7 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Raleway:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css" \>
-	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<header>
@@ -22,17 +21,17 @@
     			</button>
     			<div class="collapse navbar-collapse header-blocks" id="navbarNavAltMarkup">
       				<div class="navbar-nav">
-				        <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-				        <a class="nav-link text-white" href="#">About me</a>
-				        <a class="nav-link text-white" href="#">Skills</a>
-				        <a class="nav-link text-white" href="#">Projects</a>
-				        <a class="nav-link text-white" href="#">Contact</a>
+				        <a class="nav-link text-white active" aria-current="page" href="#main">Home</a>
+				        <a class="nav-link text-white" href="#about">About me</a>
+				        <a class="nav-link text-white" href="#skills">Skills</a>
+				        <a class="nav-link text-white" href="#projects">Projects</a>
+				        <a class="nav-link text-white" href="#contact">Contact</a>
       				</div>
     			</div>
   			</div>
 		</nav>
 	</header>
-	<section class="main-block">
+	<section class="main-block" id="main">
 		<div class="container">
 			<div class="row">
 				<div class="col main-text">
@@ -56,22 +55,17 @@
 		<div class="main-contact">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3">
+					<div class="col-lg-4">
 						<button type="button" class="btn btn-primary btn-lg btn-contact">
 							<img src="img/telegram.png" class="rounded img-telegram" alt="telegram-logo">@jigsaw11211
 						</button>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-4">
 						<button type="button" class="btn btn-primary btn-lg btn-contact">
 							<img src="img/github.png" class="rounded img-github" alt="github-logo">1JigSaW
 						</button>
 					</div>
-					<div class="col-lg-3">
-						<button type="button" class="btn btn-primary btn-lg btn-contact">
-							<img src="img/gmail.png" class="rounded img-gmail" alt="gmail-logo">jigsaw11211@gmail.com
-						</button>
-					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-4">
 						<button type="button" class="btn btn-primary btn-lg btn-contact">
 							<img src="img/phone.png" class="rounded img-phone" alt="phone-logo">89527897154
 						</button>
@@ -80,7 +74,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-block">
+	<section class="about-block" id="about">
 		<h1 class="display-1">About Me</h1>
 		<div class="container">
 			<div class="row">
@@ -102,25 +96,25 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 d-flex flex-column">
 					<div class="benefits">
 						<p class="number-benefits my_blue_color "><b>102</b></p>
-						<p class="text-benefits">Projects For Clients</p>
+						<p class="text-benefits">Clients</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 d-flex flex-column">
 					<div class="benefits">
 						<p class="number-benefits my_blue_color "><b>33</b></p>
-						<p class="text-benefits">Independent Projects</p>
+						<p class="text-benefits">Projects</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 d-flex flex-column">
 					<div class="benefits">
 						<p class="number-benefits my_blue_color "><b>4</b></p>
 						<p class="text-benefits">Hackathons</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 d-flex flex-column">
 					<div class="benefits">
 						<p class="number-benefits my_blue_color "><b>1</b></p>
 						<p class="text-benefits">Workplaces</p>
@@ -129,7 +123,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="skills">
+	<section class="skills" id="skills">
 		<h1 class="display-1">Skills</h1>
 		<div class="container">
 			<div class="row">
@@ -232,22 +226,22 @@
 			</div>
 		</div>
 	</section>
-	<section class="projects">
+	<section class="projects" id="projects">
 		<h1 class="display-1">Projects</h1>
 		<div class="projects-cards">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 d-flex flex-column">
 						<div class="card">
 						 	<img src="img/supreme.png" class="card-img-top">
 						  	<div class="card-body">
 						    	<h5 class="card-title">SuPal Bot</h5>
-						    	<p class="card-text">Bot for quick purchase of limited clothing on the website</p>
+						    	<p class="card-text">Bot for quick purchase of limited clothing supreme</p>
 						    	<a href="#" class="btn btn-primary btn-card my_blue">Посмотреть</a>
 						  	</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 d-flex flex-column">
 						<div class="card">
 						 	<img src="img/freelance.png" class="card-img-top">
 						  	<div class="card-body">
@@ -257,7 +251,7 @@
 						  	</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 d-flex flex-column">
 						<div class="card">
 						 	<img src="img/MyBC.png" class="card-img-top">
 						  	<div class="card-body">
@@ -271,7 +265,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<h1 class="display-1">Contact me</h1>
 			<div class="contact-form">

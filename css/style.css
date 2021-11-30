@@ -64,17 +64,6 @@ img {
   	height: auto;
  	max-width: 100%;
 }
-/*@media screen and (min-width: 401px) {
-	.img-logo {
-		min-width: 350px;
-	}	
-}
-
-@media screen and (max-width: 401px) {
-	.img-logo {
-		min-width: 200px;
-	}	
-}*/
 
 .hire {
 	text-align: center;
@@ -194,6 +183,10 @@ img {
 	margin-bottom: 20px;
 }
 
+.card-text {
+	font-size: 19px;
+}
+
 .btn-card {
 	width: 70%;
 	margin-top: 1%;
@@ -219,6 +212,10 @@ img {
 
 .form-label {
 	margin-top: 10px;
+}
+
+.form-control {
+	background-color: #E0FFFF;
 }
 
 .form-control-lg {
