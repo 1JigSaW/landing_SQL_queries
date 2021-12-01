@@ -7,12 +7,46 @@
 	background: #1b1b4d;
 }
 
+
 .my_blue_color {
 	color: #1b1b4d;
 }
 
 .shadow {
 	box-shadow: 0 0 30px #FFFFFF;
+}
+
+.modal {
+  	text-align: center;
+ 	background-color:rgba(0,0,0,.9);
+}
+
+.modal:before {
+  	display: inline-block;
+  	vertical-align: middle;
+  	content: " ";
+  	height: 100%;
+}
+
+.modal-dialog {
+  	display: inline-block;
+  	text-align: left;
+  	vertical-align: middle;
+  	font-family: 'Raleway', sans-serif;
+}
+
+.modal-content {
+	background: #E0FFFF;
+	border-radius: 20px;
+}
+
+.modal-header, .modal-body, .modal-footer, .modal-title {
+	font-size: 30px;
+	border:  0px;
+}
+
+.btn-thanks {
+	text-align: cent;
 }
 
 body {
