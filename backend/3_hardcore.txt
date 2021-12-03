@@ -1,0 +1,16 @@
+3) Выведите список пользователей (id, first_name, last_name, email), 
+количество объявлений, созданных ими (offer_amount), 
+и количество комментариев под этими объявлениями (comments_amount). 
+Результат отсортируйте по убыванию  offer_amount.
+
+INPUT:
+SELECT u.id, u.first_name, u.last_name, u.email, (
+SELECT COUNT(*) FROM offers o WHERE u.id = o.user_id
+) as offer_amount, COUNT(c.id) comments_amount
+FROM users u
+JOIN offers o
+ON u.id = o.user_id
+JOIN comments c
+ON o.id = c.offer_id
+GROUP BY u.id
+ORDER BY offer_amount DESC;

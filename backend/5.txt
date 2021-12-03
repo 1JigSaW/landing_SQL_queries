@@ -1,0 +1,20 @@
+5) Для вывода на сайте выберите список всех категорий, 
+в которых есть хотя бы одно объявление с указанием 
+количества объявлений по каждой категории. 
+Выведите id категории, title, slug, количество 
+объявлений (offer_amount).
+
+INPUT:
+
+SELECT c.id, c.title, c.slug, COUNT(co.offer_id) offer_amount
+FROM categories c, category_offer co
+WHERE c.id = co.category_id
+GROUP BY c.id;
+
+OUTPUT:
+id |  title   |  slug  | offer_amount
+----+----------+--------+--------------
+  2 | clerical | cleric |            1
+  1 | bags     | case   |            2
+(2 строки)
+

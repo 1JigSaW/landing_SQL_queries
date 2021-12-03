@@ -1,0 +1,22 @@
+2) Выведите объявления (id, title, user_id, offer_type, price) 
+со всеми категориями, к которым оно относится, 
+собранными в одну строку, например: 
+“Спорт, Развлечения, Дети”. Назовите этот столбец categories. 
+Отсортируйте по убыванию цены. 
+Выведите названия типов объявлений на русском: 
+если тип buy, то нужно вывести “Куплю”, 
+если sell - “Продам”, соответственно.
+
+INPUT:
+
+SELECT array_to_string(array_agg(cat.title), ',') AS categories, of.id, of.title, of.user_id, 
+(CASE WHEN offer_type = 'buy' THEN 'Куплю'
+WHEN offer_type = 'sell' THEN 'Продам'
+END), of.price
+FROM categories cat 
+JOIN category_offer cof
+ON cat.id = cof.category_id
+JOIN offers of
+ON of.id = cof.offer_id
+GROUP BY of.id
+ORDER BY of.price DESC;

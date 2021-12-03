@@ -1,0 +1,28 @@
+4) Реализуйте запрос поиска: 
+Выберите все объявления с типом “Куплю” (“buy”) 
+в категории “Животные”, в заголовке которых есть слова “кролик” и “гараж” одновременно. 
+Полный текст объявления обрежьте до 30 символов, 
+добавьте к полученной строке “...” и назовите announce. 
+Отберите объявления с ценой менее 50000.
+Поля для вывода: идентификатор объявления, тип, категория, 
+автор (имя, фамилия), заголовок, анонс, стоимость
+
+INPUT:
+
+SELECT o.id, 
+(CASE WHEN o.offer_type = 'buy' THEN 'Куплю'
+WHEN o.offer_type = 'sell' THEN 'Продам'
+END), cat.title, CONCAT(u.first_name, ' ', u.last_name) author, o.title, 
+CONCAT(SUBSTRING(o.full_text, 0, 30), ' ') announce, o.price
+FROM offers o
+JOIN users u
+ON u.id = o.user_id
+JOIN category_offer co
+ON o.id = co.offer_id
+JOIN categories cat
+ON cat.id = co.category_id
+WHERE offer_type = 'buy'
+AND o.price < 50000 
+AND cat.title = 'Животные' 
+AND o.title LIKE '%кролик%'
+AND o.title LIKE '%гараж%';

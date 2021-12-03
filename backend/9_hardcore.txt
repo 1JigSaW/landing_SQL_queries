@@ -1,0 +1,26 @@
+9) Создайте pl/pgsql-функцию, выполняющую запрос из п. 4.
+Функция должна принимать набор параметров-фильтров для поиска.
+Функция должна возвращать набор строк - список объявлений, 
+соответствующих фильтрам.
+
+INPUT:
+
+CREATE FUNCTION search_6(of_type offer_type, price integer, category varchar, word_1 varchar, word_2 varchar) RETURNS offers AS $$
+	SELECT o.id, o.created_at, o.user_id,
+	o.offer_type, o.title, o.full_text, o.price, o.picture
+	FROM offers o
+	JOIN users u
+	ON u.id = o.user_id
+	JOIN category_offer co
+	ON o.id = co.offer_id
+	JOIN categories cat
+	ON cat.id = co.category_id
+	WHERE offer_type = of_type
+	AND o.price < price 
+	AND cat.title = category 
+	AND o.title LIKE '%word_1%'
+	AND o.title LIKE '%word_2%';
+$$ LANGUAGE SQL;
+
+SELECT search('buy', 50000, 'Животные', 'кролик', 'гараж');
+

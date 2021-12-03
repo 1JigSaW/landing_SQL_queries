@@ -1,0 +1,14 @@
+7) Реализуйте запрос из пункта 6 с добавлением нарастающего итога по месяцам. 
+Те же столбцы + столбец offers_sum.
+
+INPUT:
+
+SELECT EXTRACT(YEAR FROM created_at),
+TO_CHAR(created_at, 'month') AS monthname,
+COUNT(*) offers_amount,
+SUM(COUNT(*)) OVER (ORDER BY TO_CHAR(created_at, 'month') DESC)
+FROM offers
+WHERE EXTRACT(YEAR FROM created_at) = 2021
+GROUP BY TO_CHAR(created_at, 'month'), EXTRACT(YEAR FROM created_at)
+ORDER BY monthname ASC;
+

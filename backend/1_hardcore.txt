@@ -1,0 +1,17 @@
+1) Выберите список объявлений, относящихся к категории “Дом”. 
+Поля: название категории (category_name) и данные объявления 
+(id, created_at, user_id, title, price). 
+Список категорий для объявлений выводить не нужно.
+Выведите следующие 4 объявления после первых 4.
+
+INPUT:
+
+SELECT of.id, of.created_at, of.user_id, of.title, of.price
+FROM categories cat 
+JOIN category_offer cof
+ON cat.id = cof.category_id
+JOIN offers of
+ON of.id = cof.offer_id
+WHERE cat.title = 'House'
+LIMIT 4
+OFFSET 4;

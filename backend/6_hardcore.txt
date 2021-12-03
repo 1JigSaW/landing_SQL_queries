@@ -1,0 +1,14 @@
+6) Соберите мини-отчёт: реализуйте выборку количества 
+объявлений по месяцам 2021 года. 
+Поля для вывода: year, monthname, offers_amount. 
+Отсортируйте отчёт по месяцам по возрастанию.  
+
+INPUT:
+
+SELECT EXTRACT(YEAR FROM created_at),
+TO_CHAR(created_at, 'month') AS monthname,
+COUNT(*) offers_amount
+FROM offers
+WHERE EXTRACT(YEAR FROM created_at) = 2021
+GROUP BY TO_CHAR(created_at, 'month'), EXTRACT(YEAR FROM created_at)
+ORDER BY monthname ASC;

@@ -1,0 +1,20 @@
+8) Соберите jsonb-массив всех комментариев для объявления с id 7. 
+Каждый комментарий должен быть представлен jsonb-объектом 
+со следующими данными: id комментария, текст, дата создания, 
+id пользователя, создавшего комментарий, 
+фамилия и имя одной строкой, ссылка на аватар.
+
+INPUT:
+
+SELECT json_build_object(
+	'id', c.id, 
+	'comment_text', c.comment_text, 
+	'created_at', c.created_at, 
+	'user_id', c.user_id, 
+	'name',	CONCAT(u.first_name, ' ', u.last_name),
+	'avatar', u.avatar
+)
+FROM comments c, users u, offers o
+WHERE u.id = c.user_id
+AND o.id = c.offer_id
+AND o.id = 7;

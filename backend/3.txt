@@ -1,0 +1,19 @@
+3) Выберите список пользователей, которые ещё не опубликовали ни одного объявления. 
+Поля для вывода: идентификатор пользователя, email, дата регистрации, 
+имя и фамилия одной строкой как ‘user_name’. 
+Отсортируйте по возрастанию даты регистрации.
+
+INPUT:
+
+SELECT u.id, u.email, u.created_at, CONCAT(u.first_name,' ', u.last_name) user_name
+FROM users u
+LEFT JOIN offers o
+ON u.id = o.user_id
+WHERE o.user_id = NULL
+ORDER BY u.created_at;
+
+OUTPUT:
+
+id | email | created_at | user_name
+----+-------+------------+-----------
+(0 строк)

@@ -1,0 +1,16 @@
+1). Выберите список всех комментариев, созданных пользователем с идентификатором 1. 
+Поля для вывода: id, created_at, offer_id, comment_text.
+
+INPUT:
+
+SELECT (id, created_at, offer_id, comment_text)
+FROM comments
+WHERE user_id = 1;
+
+OUTPUT:
+
+ id |          created_at           | offer_id | comment_text
+----+-------------------------------+----------+--------------
+  1 | 2021-12-01 16:23:14.279272+03 |        1 | pasdasdasd
+(1 строка)
+

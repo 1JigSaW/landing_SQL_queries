@@ -1,0 +1,19 @@
+4) Выберите среди всех объявлений на продажу самые дорогие товары, 
+их количество динамическое и заранее неизвестно. Выведите их идентификаторы, 
+автора (имя, фамилия), заголовки и цену продажи.
+
+INPUT:
+
+SELECT o.id, CONCAT(u.first_name, ' ', u.last_name) author, o.title, o.price
+FROM users u, offers o
+WHERE u.id = o.user_id
+ORDER BY o.price DESC
+LIMIT 5;
+
+OUTPUT:
+
+ id |    author     | title | price
+----+---------------+-------+-------
+  2 | Alex Trifonov | pen   | 10000
+  1 | Mikhail Duev  | bag   |   234
+(2 строки)
