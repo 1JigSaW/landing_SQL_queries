@@ -3,6 +3,22 @@
 	margin: 0;
 }
 
+body {
+	background: #000000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+nav {
+	background: #000000;
+}
+
+img {
+	display: inline-block;
+  	height: auto;
+ 	max-width: 100%;
+}
+
 .my_blue {
 	background: #1b1b4d;
 }
@@ -36,8 +52,8 @@
 }
 
 .modal-content {
-	background: #E0FFFF;
 	border-radius: 20px;
+	background: #E0FFFF;
 }
 
 .modal-header, .modal-body, .modal-footer, .modal-title {
@@ -47,16 +63,6 @@
 
 .btn-thanks {
 	text-align: cent;
-}
-
-body {
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	background: #000000;
-}
-
-nav {
-	background: #000000;
 }
 
 .header-logo {
@@ -98,13 +104,6 @@ nav {
 
 .display-6 {
 	color: #E0FFFF;
-}
-
-
-img {
-	display: inline-block;
-  	height: auto;
- 	max-width: 100%;
 }
 
 .hire {
@@ -154,13 +153,13 @@ img {
 
 .about-block, .skills, .projects, .contact, .contact-form {
 	display: block;
-	background: #000000;
 	width: 100%;
 	height: auto;
-	font-family: 'Alfa Slab One', cursive;
 	color: #FFFFFF;
 	text-align: center;
 	padding-top: 2%;
+	background: #000000;
+	font-family: 'Alfa Slab One', cursive;
 }
 
 .img_about {
@@ -168,26 +167,27 @@ img {
 }
 
 .about-text {
-	font-family: 'Raleway', sans-serif;
-	font-size: 3vh;
 	color: #E0FFFF;
 	margin-top: 40px;
 	border: 2px;
 	border-radius: 2px;
 	border-color: #000000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 3vh;
 }
 
 .benefits {
     align-items: center;
-    padding: 20px;
+    text-align: center;
     width: 100%;
+    padding: 20px;
     margin-top: 30px;
     margin-bottom: 27px;
     font-family: 'Raleway', sans-serif;
     background: #E0FFFF;
     color: #000000;
     border-radius: 30px;
-    text-align: center;
+    
     box-shadow: 0 0 15px #FFFFFF;
 }
 
