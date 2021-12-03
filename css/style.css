@@ -19,6 +19,12 @@ img {
  	max-width: 100%;
 }
 
+button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .my_blue {
 	background: #1b1b4d;
 }
@@ -91,6 +97,20 @@ img {
 	display: block;
 	margin-top: 9%;
 	width: 50%;
+	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 0.5s; /*Скорость перехода состояния элемента*/
+	animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
+	animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+	animation-delay: 0.5s; /* Задержка перед началом */
+}
+
+@keyframes show{
+	0%{
+	opacity:0;
+	}
+	100% {
+	opacity:1;
+	}
 }
 
 .main-name {
